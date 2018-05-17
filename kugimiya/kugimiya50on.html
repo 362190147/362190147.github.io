@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>钉宫五十音图</title>
+    <link rel="stylesheet" type="text/css" href="kugimiya50on.css" />
+</head>
+<body>
+<div>
+    <div  id="table50on" >
+        <table border="1">
+            <tr>
+                <td/>
+                <td>あ段</td>
+                <td>い段</td>
+                <td>う段</td>
+                <td>え段</td>
+                <td>お段</td>
+            </tr>
+            <tr>
+                <td>あ行</td>
+                <td>  a<br/><button onclick="test('a')">あア</button></td>
+                <td>  i<br/><button onclick="test('i')">いイ</button></td>
+                <td>  u<br/><button onclick="test('u')">うウ</button></td>
+                <td>  e<br/><button onclick="test('e')">えエ</button></td>
+                <td>  o<br/><button onclick="test('o')">おオ</button></td>
+            </tr>
+            <tr>
+                <td>か行</td>
+                <td>  ｋa<br/><button onclick="test('ka')">かカ</button></td>
+                <td>  ｋi<br/><button onclick="test('ki')">きキ</button></td>
+                <td>  ｋu<br/><button onclick="test('ku')">くク</button></td>
+                <td>  ｋe<br/><button onclick="test('ke')">けケ</button></td>
+                <td>  ｋo<br/><button onclick="test('ko')">こコ</button></td>
+            </tr>
+            <tr>
+                <td>さ行</td>
+                <td>  sa<br/><button onclick="test('sa')">さサ</button></td>
+                <td>  shi<br/><button onclick="test('shi')">しシ</button></td>
+                <td>  su<br/><button onclick="test('su')">すス</button></td>
+                <td>  se<br/><button onclick="test('se')">せセ</button></td>
+                <td>  so<br/><button onclick="test('so')">そソ</button></td>
+            </tr>
+            <tr>
+                <td>た行</td>
+                <td>  ta<br/><button onclick="test('ta')">たタ</button></td>
+                <td>  chi<br/><button onclick="test('chi')">ちチ</button></td>
+                <td>  tsu<br/><button onclick="test('tsu')">つツ</button></td>
+                <td>  te<br/><button onclick="test('te')">てテ</button></td>
+                <td>  to<br/><button onclick="test('to')">とト</button></td>
+            </tr>
+            <tr>
+                <td>な行</td>
+                <td>  na<br/><button onclick="test('na')">なナ</button></td>
+                <td>  ni<br/><button onclick="test('ni')">にニ</button></td>
+                <td>  nu<br/><button onclick="test('nu')">ぬヌ</button></td>
+                <td>  ne<br/><button onclick="test('ne')">ねネ</button></td>
+                <td>  no<br/><button onclick="test('no')">のノ</button></td>
+            </tr>
+            <tr>
+                <td>は行</td>
+                <td>  ha<br/><button onclick="test('ha')">はハ</button></td>
+                <td>  hi<br/><button onclick="test('hi')">ひヒ</button></td>
+                <td>  fu<br/><button onclick="test('fu')">ふフ</button></td>
+                <td>  he<br/><button onclick="test('he')">へヘ</button></td>
+                <td>  ho<br/><button onclick="test('ho')">ほホ</button></td>
+            </tr>
+            <tr>
+                <td>ま行</td>
+                <td>  ma<br/><button onclick="test('ma')">まマ</button></td>
+                <td>  mi<br/><button onclick="test('mi')">みミ</button></td>
+                <td>  mu<br/><button onclick="test('mu')">むム</button></td>
+                <td>  me<br/><button onclick="test('me')">めメ</button></td>
+                <td>  mo<br/><button onclick="test('mo')">もモ</button></td>
+            </tr>
+            <tr>
+                <td>や行</td>
+                <td>  ya<br/><button onclick="test('ya')">やヤ</button></td>
+                <td></td>
+                <td>  yu<br/><button onclick="test('yu')">ゆウ</button></td>
+                <td></td>
+                <td>  yo<br/><button onclick="test('yo')">よヨ</button></td>
+            </tr>
+            <tr>
+                <td>ら行</td>
+                <td>  ra<br/><button onclick="test('ra')">らラ</button></td>
+                <td>  ri<br/><button onclick="test('ri')">りリ</button></td>
+                <td>  ru<br/><button onclick="test('ru')">るル</button></td>
+                <td>  re<br/><button onclick="test('re')">れレ</button></td>
+                <td>  ro<br/><button onclick="test('ro')">ろロ</button></td>
+            </tr>
+            <tr>
+                <td>わ行</td>
+                <td>  wa<br/><button onclick="test('wa')">わワ</button></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>  wo<br/><button onclick="test('wo')">をヲ</button></td>
+            </tr>
+            <tr>
+                <td>  ｎ<br/><button onclick="test('n')">んン</button></td>
+                <td>  <br/><button id="imgflag" onclick="hideimg()">隐藏<br/>图片</button></td>
+                <td>  <br/><button id="mojiflag" onclick="showmoji()">隐藏<br/>文字</button></td>
+            </tr>
+        </table>
+    </div>
+        <div id="div2" style="float:left">
+            <img class="kanaimg" id="img1" src="img/a.png"/>
+            <img class="kanaimg"id="img2" src="moji/mojia.Png"/>
+            <div class="kana" id="mojia">アンタなんて豆腐の角に<br/>頭ぶつけて死んじゃえば<br/>いいのよ！</div>
+            <div class="kana" id="mojii">いい加減、目覚まし時計で<br/>起きなさいよね！<br/>なんでいつも私が起こさ<br/>なきやいけないのよ！</div>
+            <div class="kana" id="mojiu">うるさい<br/>うるさい<br/>うるさい<br/>うるさーーーい！</div>
+            <div class="kana" id="mojie">選んだのは私で<br/>アンタじゃないんだからね！</div>
+            <div class="kana" id="mojio">おはよーじゃなくて<br/>おはようございますでしょう！</div>
+            <div class="kana" id="mojika">勘違いしないでよね<br/>別にあんたのために<br/>やったわけじゃ<br/>ないんだから。</div>
+            <div class="kana" id="mojiki">キキキキキ<br/>キスなんて<br/>100年早いわよ！</div>
+            <div class="kana" id="mojiku">くっ……<br/>胸のことを……</div>
+            <div class="kana" id="mojike">怪我でもされたら<br/>私が困るじゃない。</div>
+            <div class="kana" id="mojiko">このおバカ！<br/>私の気持ちも<br/>知らないで……</div>
+            <div class="kana" id="mojisa">さよならなんて言って<br/>あげないんだから！</div>
+            <div class="kana" id="mojishi">し、心配なんて<br/>いてないんだからね！</div>
+            <div class="kana" id="mojisu">す、好きでこんな格好してるわけじゃないんだからね…<br/>あんたの前だけよ…<br/>もう…バカ…</div>
+            <div class="kana" id="mojise">全力でなだいよ？<br/>叩き溃してあげるから？</div>
+            <div class="kana" id="mojiso">そばにいない！<br/>一生よ！いいわね！</div>
+            <div class="kana" id="mojita">誕生日プレセントなんて<br/>誰にももらえないだろうだら…<br/>はい、これプレセント…</div>
+            <div class="kana" id="mojichi">ちょっと待ちなさいよ！<br/>この鈍感男！なんて気付かないのよう！</div>
+            <div class="kana" id="mojitsu">ついでだから<br/>あんたも誘ってあげるわ。</div>
+            <div class="kana" id="mojite">電話なんかして<br/>こなくても…<br/>寂しくなんてないんだから…</div>
+            <div class="kana" id="mojito">隣に来ないでよ<br/>耻ずかしいじゃない。</div>
+            <div class="kana" id="mojina">な、なによあつ！<br/>私というものがありながら！<br/>ううううう…</div>
+            <div class="kana" id="mojini">逃げないで<br/>話くらいちゃんと<br/>聞きなさいよね。</div>
+            <div class="kana" id="mojinu">盗まれたのは私の…<br/>もうっ、知らない、バカ！！<br/>何言わせんのよ！！</div>
+            <div class="kana" id="mojine">寝起きに<br/>なにしてんのよ！</div>
+            <div class="kana" id="mojino">“NO”とは<br/>言わせないわよ！</div>
+            <div class="kana" id="mojiha">耻ずかしいけど<br/>手、手、手くらい繫いであげてもいいわよ<br/>ホラ！</div>
+            <div class="kana" id="mojihi">ひ…ひざまくらあ？<br/>い，一分だけだからね。</div>
+            <div class="kana" id="mojifu">ふ、<br/>二人しかいないんなら…<br/>今日仕方ないわね…</div>
+            <div class="kana" id="mojihe">変態　変態<br/>変態　変態　変態<br/>バカ　大変態！！！<br/>もうしらない</div>
+            <div class="kana" id="mojiho">ボケーっと<br/>してるんじゃないのわよ！<br/>蹴り飛ばすわよ！</div>
+            <div class="kana" id="mojima">まっまぁ…<br/>あなたがどうしてもって<br/>言うのなら仕方ないけど</div>
+            <div class="kana" id="mojimi">見せたいるわけじゃないんだから…<br/>あなただから……</div>
+            <div class="kana" id="mojimu">無視しないでいよ！<br/>謝るから！</div>
+            <div class="kana" id="mojime">目から汗が出てるだけなんだから<br/>涙じゃないのよぉ！！</div>
+            <div class="kana" id="mojimo">もぉ～バカバカバカ！！<br/>そんなことするなんて<br/>知らない知らない<br/>知らない！</div>
+            <div class="kana" id="mojiya">妬いてるわけじゃないよ<br/>違うって<br/>言ってるじゃない！</div>
+            <div class="kana" id="mojiyu">優柔不断な奴は<br/>キライだからね！</div>
+            <div class="kana" id="mojiyo">よくないわよ<br/>私のことを好きでも<br/>嫌いでもないなんて<br/>言うのは</div>
+            <div class="kana" id="mojira">ラーメン伸びるわよ<br/>はやく食べなさい！<br/>えっふぅふぅしてくれ？<br/>ばかぁー</div>
+            <div class="kana" id="mojiri">利用するに値しないわね<br/>アナタなんか</div>
+            <div class="kana" id="mojiru">瑠璃色のリボン<br/>もらっても全然嬉しく<br/>ないんだから</div>
+            <div class="kana" id="mojire">連絡くらい<br/>よこしなさい！<br/>心配したんだから</div>
+            <div class="kana" id="mojiro">ろくなことがないわね<br/>あなたと一緒に<br/>いられるのは<br/>私くらいなんだから</div>
+            <div class="kana" id="mojiwa">わ、私だけを見ればいいじゃいいのよ！</div>
+        </div>
+
+
+</div>
+</body>
+<script>
+    var audio = document.createElement('audio');
+    var showmojif=true;
+    var showimgf=true;
+    var img1=document.querySelector("#img1");
+    //var img2=document.querySelector("#img2");
+    var imgflag=document.querySelector("#imgflag");
+    var  moji=null;
+
+    //暂停后隐藏图片
+    function  pausedTohide() {
+        if(audio.paused){
+            showimgf=true;
+            showmojif=true;
+            imgflag.innerHTML="显示<br/>图片";
+            if(img1!=null)img1.style.display="none";
+            mojiflag.innerHTML="显示<br/>文字";
+            if(moji!=null)moji.style.display="none";
+
+        }else {
+            setTimeout(pausedTohide,1000);
+        }
+    }
+
+    function test(path) {
+        if(!audio.paused) audio.pause();
+        audio.src='ogg/'+path+'.ogg';
+        audio.play();
+
+        img1.src='img/'+path+'.png';
+        //img2.src='moji/moji'+path+'.png';
+
+        showimgf=true;
+        imgflag.innerHTML="隐藏<br/>图片";
+        img1.style.display="inline";
+
+        //img2.style.display="inline";
+
+        if(moji!=null)moji.style.display="none";
+        moji=document.querySelector("#moji"+path);
+        if(showmojif&&moji!=null)
+            moji.style.display="inline";
+        //播放停止后
+        setTimeout(pausedTohide,1000);
+    }
+
+    function showmoji() {
+        showmojif=!showmojif;
+        var mojiflag=document.querySelector("#mojiflag");
+        if(showmojif){
+            mojiflag.innerHTML="隐藏<br/>文字";
+            if(moji!=null)moji.style.display="inline";
+        }
+        else{
+            mojiflag.innerHTML="显示<br/>文字";
+            if(moji!=null)moji.style.display="none";
+        }
+    }
+
+    function hideimg(){
+        showimgf=!showimgf;
+
+        if(showimgf){
+            imgflag.innerHTML="隐藏<br/>图片";
+            if(img1!=null)img1.style.display="inline";
+
+        } else{
+            imgflag.innerHTML="显示<br/>图片";
+            if(img1!=null)img1.style.display="none";
+        }
+    }
+
+
+</script>
+</html>

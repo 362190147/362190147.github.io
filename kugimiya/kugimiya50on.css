@@ -1,0 +1,28 @@
+td{ text-align:center;  }
+
+#table50on{
+    float:left;
+}
+
+#div2{
+    position: absolute ;
+    top: 0;
+    left: 0;}
+.kanaimg{
+    display: none;
+}
+.kana{
+    display:none;
+    color:black;
+    position: absolute;
+    top: 125px;
+    left:0px;
+    font-size: 25px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
+    -webkit-writing-mode:vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    height: 350px;
+    width: 250px;
+}

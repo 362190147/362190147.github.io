@@ -1,0 +1,36 @@
+body{
+    background-image: url("img/bg.jpg");
+}
+
+#index{
+    background-color: #8959a8;
+    position: relative;
+    filter:alpha(opacity=50);  /*支持 IE 浏览器*/
+    -moz-opacity:0.50; /*支持 FireFox 浏览器*/
+    opacity:0.50;  /*支持 Chrome, Opera, Safari 等浏览器*/
+}
+a{
+    color:#ff9955;
+    position: relative;
+    width:100px;
+    animation: move 5s;
+    -webkit-animation: move 5s infinite;
+    transition: width 2s;
+    -moz-transition: width 2s;	/* Firefox 4 */
+    -webkit-transition: width 2s;	/* Safari 和 Chrome */
+    -o-transition: width 2s;	/* Opera */
+}
+
+@keyframes move {
+ from{color: aqua}
+    to{color: #90ff00
+    }
+}
+@keyframes move2 {
+
+}
+
+a:hover
+{
+    width:300px;
+}
