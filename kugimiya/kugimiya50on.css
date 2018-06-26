@@ -1,8 +1,12 @@
 td{ text-align:center;  }
 body{
     background-image: url("../img/bg.jpg");
-    background-size:100% 100%;-moz-background-size:100% 100%;
     color: cyan;
+}
+@media all and (orientation :portrait) {
+    body{
+        background-size:100% 100%;-moz-background-size:100% 100%;
+    }
 }
 #table50on{
     float:left;
