@@ -1,6 +1,7 @@
 td{ text-align:center;  }
 body{
     background-image: url("../img/bg.jpg");
+    background-size:100% 100%;-moz-background-size:100% 100%;
     color: cyan;
 }
 #table50on{
